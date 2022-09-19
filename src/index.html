@@ -2,17 +2,257 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body class="grid place-items-center p-8">
-    <h1 class="text-xl font-bold text-emerald-700">Tailwind Template E2022</h1>
-    <p class="text-emerald-500">
-      Powered by <a href="https://vitejs.dev/guide">Vite</a>
-    </p>
-    <img src="img/vite.svg" alt="Vite Logo" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/vite.svg"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.typekit.net/dax8hro.css"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
 
-    <script type="module" src="./main.js"></script>
+    <title>Nostalgic Designing</title>
+  </head>
+  <body>
+    <!-------- Navigation --------->
+
+    <header class="h-28 w-screen">
+      <nav class="mx-16 my-10">
+        <ul
+          class="flex flex-row justify-end gap-10 uppercase"
+        >
+          <li class="selected">
+            <a href="index.html"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a href="project.html"
+              >projects</a
+            >
+          </li>
+          <li>
+            <a href="about.html"
+              >about</a
+            >
+          </li>
+          <li>
+            <a href="insight.html"
+              >insight</a
+            >
+          </li>
+          <li>
+            <a href="contact.html"
+              >contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- call to action -->
+    <div
+      class="fixed col-start-1 row-start-1 flex self-end"
+    >
+      <li
+        class="sticky -rotate-90 list-none border-b-2 border-black"
+      >
+        <a href="contact.html"
+          >Contact me</a
+        >
+      </li>
+    </div>
+
+    <!------- Splash -------->
+
+    <section class="">
+      <div
+        class="h grid grid-cols-6 grid-rows-3"
+      >
+        <!-- profil img -->
+        <div
+          class="col-span-2 col-start-2 row-start-1 row-end-4"
+        >
+          <img
+            class=""
+            src="/img/profile.png"
+            alt=""
+          />
+        </div>
+
+        <!-- Titel headings -->
+        <div
+          class="col-span-4 col-start-3 row-start-2 grid grid-cols-5 grid-rows-3"
+        >
+          <h1
+            class="col-start-2 row-start-1 grid font-bold"
+          >
+            Nostalgic
+            <hr />
+          </h1>
+
+          <h1
+            class="col-start-3 row-start-2 grid"
+          >
+            Designing
+            <hr />
+          </h1>
+
+          <h5
+            class="col-span-3 col-start-4 row-start-3"
+          >
+            portfolio of Tania Jørgensen
+          </h5>
+        </div>
+
+        <hr
+          class="col-span-full col-start-1 row-start-4 mb-10 border"
+        />
+      </div>
+    </section>
+
+    <!------- Section 1 ------>
+    <section
+      class="mt-10 bg-green_dark"
+    >
+      <div
+        class="col-start-1 col-end-4 ml-44 grid grid-cols-2 gap-12"
+      >
+        <!-- introduktions content -->
+        <div
+          class="mr-36 flex flex-col justify-center border-black text-white"
+        >
+          <h3 class="">
+            Nice to meet you
+          </h3>
+          <h4 class="uppercase">
+            Ready to create some magic?
+          </h4>
+          <p class="mt-7">
+            As a digital designer, I
+            focus on adapting the user
+            journey to the individual
+            customer or the individual
+            project. <br />
+            I create designs that cover
+            and speak to the need, so
+            that visuality and
+            functionality can provide
+            the best experience.
+          </p>
+        </div>
+
+        <!-- Illustrationer -->
+        <div
+          class="border-l border-black"
+        >
+          <div
+            class="relative left-12 -top-12 col-start-2"
+          >
+            <img
+            src=/img/illustration.svg
+            alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!----- section 2 ----->
+
+    <section class="">
+      <div
+        class="my-20 flex justify-center gap-10"
+      >
+        <!-------- The Designer -------->
+        <a href="about.html">
+          <div class="uppercase">
+            <h4>The deisgner</h4>
+            <div
+              class="h-96 w-96 border-2 border-black"
+            >
+              <img src="" alt="" />
+            </div>
+          </div>
+        </a>
+        <!-------- Project & indsight -------->
+
+        <div class="grid gap-10">
+          <a href="project.html">
+            <div class="flex uppercase">
+              <div
+                class="h-96 w-96 border-2 border-black"
+              >
+                <img src="" alt="" />
+              </div>
+              <div class="w-16">
+                <h4 class="rotate-90">
+                  projects
+                </h4>
+              </div>
+            </div>
+          </a>
+          <a href="insight.html">
+            <div class="flex uppercase">
+              <div
+                class="h-60 w-96 border-2 border-black"
+              >
+                <img src="" alt="" />
+              </div>
+              <div class="w-16">
+                <h4 class="rotate-90">
+                  Indsight
+                </h4>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      class="bg-green_light py-12"
+    >
+      <div class="flex justify-around">
+        <!-------- kontakt informationer ------>
+        <div
+          class="flex flex-col gap-2"
+        >
+          <p class="p_footer_bold">
+            Contact
+          </p>
+          <div class="">
+            <p>
+              <a
+                class="p_footer"
+                href="mailto: tania.jorgensen@outlook.com"
+                >tania.jorgensen@outlook.com</a
+              >
+            </p>
+            <p class="p_footer">
+              <a href="tel:22374355"
+                >+45 22 37 43 55</a
+              >
+            </p>
+          </div>
+        </div>
+        <div
+          class="collab my-6 flex justify-center rounded-xl bg-beige_light px-5 drop-shadow-2xl"
+        >
+          <button class="btn_contact">
+            Interested in a
+            collaboration?
+          </button>
+        </div>
+      </div>
+    </footer>
+    <script
+      type="module"
+      src="./main.js"
+    ></script>
   </body>
 </html>
