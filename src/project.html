@@ -21,46 +21,103 @@
   <body>
     <!-------- Navigation --------->
 
-    <header class="h-28 w-screen">
-      <nav class="mx-16 my-10">
-        <ul
-          class="flex flex-row justify-end gap-10 uppercase"
+    <header class="w-screen">
+      <div
+        class="mx-auto flex items-center justify-between bg-green_dark py-4 md:bg-transparent"
+      >
+        <div class="ml-10">
+          <h2>portfolio</h2>
+        </div>
+
+        <!-- burger svg -->
+        <button
+          id="toggle"
+          class="mr-2 md:hidden"
         >
-          <li>
-            <a href="index.html"
-              >Home</a
-            >
-          </li>
-          <li class="selected">
-            <a href="project.html"
-              >projects</a
-            >
-          </li>
-          <li>
-            <a href="about.html"
-              >about</a
-            >
-          </li>
-          <li>
-            <a href="insight.html"
-              >insight</a
-            >
-          </li>
-          <li>
-            <a href="contact.html"
-              >contact</a
-            >
-          </li>
-        </ul>
-      </nav>
+          <svg
+            class="h-10 w-10 text-white"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <line
+              x1="3"
+              y1="12"
+              x2="21"
+              y2="12"
+            />
+            <line
+              x1="3"
+              y1="6"
+              x2="21"
+              y2="6"
+            />
+            <line
+              x1="3"
+              y1="18"
+              x2="21"
+              y2="18"
+            />
+          </svg>
+        </button>
+
+        <!-- navigation -->
+        <nav
+          id="nav"
+          class="fixed top-20 bottom-0 -right-full w-80 bg-green_dark transition-all md:static md:w-auto md:bg-transparent md:pr-12"
+        >
+          <ul
+            class="ml-3 md:flex md:gap-10"
+          >
+            <li>
+              <a
+                class="block p-3"
+                href="index.html"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                class="selected block p-3"
+                href="project.html"
+                >projects</a
+              >
+            </li>
+            <li>
+              <a
+                class="block p-3"
+                href="about.html"
+                >about</a
+              >
+            </li>
+            <li>
+              <a
+                class="block p-3"
+                href="insight.html"
+                >insight</a
+              >
+            </li>
+            <li>
+              <a
+                class="block p-3"
+                href="contact.html"
+                >contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <!-- call to action -->
     <div
-      class="fixed col-start-1 row-start-1 flex self-end"
+      class="sm:hidden md:fixed md:top-36 md:block"
     >
       <li
-        class="sticky -rotate-90 list-none border-b-2 border-black"
+        class="border-black md:-rotate-90 md:list-none md:border-b-2"
       >
         <a href="contact.html"
           >Contact me</a
@@ -70,12 +127,17 @@
 
     <section>
       <!-- project introduction -->
-      <div class="mx-44">
-        <div class="grid gap-10">
-          <h6 class="uppercase">
+
+      <div
+        class="mx-10 md:mx-32 lg:mx-44"
+      >
+        <div class="mb-10 grid">
+          <h6
+            class="mb-5 mt-10 uppercase"
+          >
             websites
           </h6>
-          <p class="mr-28">
+          <p class="md:mr-28">
             Lorem ipsum dolor sit amet,
             consectetur adipiscing elit,
             sed do eiusmod tempor
@@ -88,73 +150,94 @@
           </p>
         </div>
 
-        <div class="my-20">
-          <h2 class="mb-10">
+        <!-- School Projects -->
+
+        <div class="mb-10">
+          <h2 class="mb-5 md:mb-10">
             School projects
           </h2>
           <div
-            class="mx-28 flex gap-10"
+            class="grid gap-5 md:flex md:gap-10 lg:mx-28"
           >
             <div
-              class="grid grid-rows-3 gap-10"
+              class="grid gap-5 md:grid-rows-3 md:gap-10"
             >
-              <div class="">
+              <div
+                class="border border-black"
+              >
                 <img
-                  class=""
+                  class="border border-black"
                   src="img/Boletteangel.png"
                   alt=""
                 />
               </div>
-              <div class="">
+              <div
+                class="border border-black"
+              >
                 <img
                   src="img/grob.png"
                   alt=""
                 />
               </div>
               <img
+                class="border border-black"
                 src="img/webfeature.png"
                 alt=""
               />
             </div>
             <div
-              class="grid grid-rows-3 gap-10"
+              class="grid gap-5 md:grid-rows-3 md:gap-10"
             >
               <img
+                class="border border-black"
                 src="img/Siptip.png"
                 alt=""
               />
               <img
+                class="border border-black"
                 src="img/Unesco.png"
                 alt=""
               />
               <img
+                class="border border-black"
                 src="img/Portfolio_v1.png"
                 alt=""
               />
             </div>
           </div>
         </div>
-        <div class="mt-20 mb-28">
-          <h2 class="mb-10">
+
+        <!-- Personal  Projects -->
+
+        <div
+          class="mb-10 md:mt-20 md:mb-28"
+        >
+          <h2 class="mb-5 md:mb-10">
             Personal projects
           </h2>
 
           <div
-            class="mx-28 flex gap-10"
+            class="grid gap-5 md:mx-28 md:flex md:gap-10"
           >
-            <div>
+            <div
+              class="border border-black"
+            >
               <img
                 src="img/ccf.png"
                 alt=""
               />
             </div>
-            <div>
+            <div
+              class="border border-black"
+            >
               <img
                 src="img/marie.png"
                 alt=""
               />
             </div>
-            <div>
+            <div
+              class="border border-black"
+            >
               <img
                 src="img/visitkort.png"
                 alt=""
@@ -163,21 +246,17 @@
           </div>
         </div>
       </div>
-
-      <!-- School Projects -->
-      <div>
-        <h2></h2>
-      </div>
     </section>
+
     <!-- footer -->
     <footer
       class="bg-green_light py-12"
     >
-      <div class="flex justify-around">
+      <div
+        class="mx-20 grid md:flex md:justify-around"
+      >
         <!-------- kontakt informationer ------>
-        <div
-          class="flex flex-col gap-2"
-        >
+        <div class="grid gap-2">
           <p class="p_footer_bold">
             Contact
           </p>
@@ -195,6 +274,19 @@
               >
             </p>
           </div>
+        </div>
+        <div
+          class="mt-4 grid gap-1 md:mt-0"
+        >
+          <p class="p_footer_bold">
+            Social
+          </p>
+          <p class="p_footer">
+            <a
+              href="https://www.linkedin.com/in/taniajorgensen/"
+              >linkedin/taniajorgensen</a
+            >
+          </p>
         </div>
         <div
           class="collab my-6 flex justify-center rounded-xl bg-beige_light px-5 drop-shadow-2xl"

@@ -20,40 +20,97 @@
   </head>
   <body>
     <!-------- Navigation --------->
+    <header class="w-screen">
+      <div
+        class="mx-auto flex items-center justify-between bg-green_dark py-4 md:bg-transparent"
+      >
+        <div class="ml-10">
+          <h2>portfolio</h2>
+        </div>
 
-    <header class="h-28 w-screen">
-      <nav class="mx-16 my-10">
-        <ul
-          class="flex flex-row justify-end gap-10 uppercase"
+        <!-- burger svg -->
+        <button
+          id="toggle"
+          class="mr-2 md:hidden"
         >
-          <li>
-            <a href="index.html"
-              >Home</a
-            >
-          </li>
-          <li>
-            <a href="project.html"
-              >projects</a
-            >
-          </li>
-          <li>
-            <a href="about.html"
-              >about</a
-            >
-          </li>
-          <li>
-            <a href="insight.html"
-              >insight</a
-            >
-          </li>
-          <li class="selected">
-            <a href="contact.html"
-              >contact</a
-            >
-          </li>
-        </ul>
-      </nav>
+          <svg
+            class="h-10 w-10 text-white"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <line
+              x1="3"
+              y1="12"
+              x2="21"
+              y2="12"
+            />
+            <line
+              x1="3"
+              y1="6"
+              x2="21"
+              y2="6"
+            />
+            <line
+              x1="3"
+              y1="18"
+              x2="21"
+              y2="18"
+            />
+          </svg>
+        </button>
+
+        <!-- navigation -->
+        <nav
+          id="nav"
+          class="fixed top-20 bottom-0 -right-full w-80 bg-green_dark transition-all md:static md:w-auto md:bg-transparent md:pr-12"
+        >
+          <ul
+            class="ml-3 md:flex md:gap-10"
+          >
+            <li>
+              <a
+                class="block p-3"
+                href="index.html"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                class="block p-3"
+                href="project.html"
+                >projects</a
+              >
+            </li>
+            <li>
+              <a
+                class="block p-3"
+                href="about.html"
+                >about</a
+              >
+            </li>
+            <li>
+              <a
+                class="block p-3"
+                href="insight.html"
+                >insight</a
+              >
+            </li>
+            <li>
+              <a
+                class="selected block p-3"
+                href="contact.html"
+                >contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
+
     <section>
       <div
         class="mx-44 mb-44 mt-20 grid grid-cols-2 gap-28"
@@ -209,11 +266,11 @@
     <footer
       class="bg-green_light py-12"
     >
-      <div class="flex justify-around">
+      <div
+        class="mx-20 grid md:flex md:justify-around"
+      >
         <!-------- kontakt informationer ------>
-        <div
-          class="flex flex-col gap-2"
-        >
+        <div class="grid gap-2">
           <p class="p_footer_bold">
             Contact
           </p>
@@ -231,6 +288,19 @@
               >
             </p>
           </div>
+        </div>
+        <div
+          class="mt-4 grid gap-1 md:mt-0"
+        >
+          <p class="p_footer_bold">
+            Social
+          </p>
+          <p class="p_footer">
+            <a
+              href="https://www.linkedin.com/in/taniajorgensen/"
+              >linkedin/taniajorgensen</a
+            >
+          </p>
         </div>
         <div
           class="collab my-6 flex justify-center rounded-xl bg-beige_light px-5 drop-shadow-2xl"
